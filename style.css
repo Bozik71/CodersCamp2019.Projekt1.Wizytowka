@@ -3,13 +3,13 @@
     padding: 0;
 }
 body {
-    font-family: Raleway, sans-serif;
+    font-family: 'Raleway', sans-serif;
     box-sizing: border-box;
 }
 .container {
 border: chocolate 2px solid;
 max-width: 1440px;
-height: 150vh;
+height: 200vh;
 margin: 0 auto;
 }
 /*-------------------------------------------------*/
@@ -187,9 +187,9 @@ margin: 3% auto;
 .section-Contact-us {
     border: rgb(211, 31, 166) solid 2px;
 }
-.section-Contact-us p {
+.section-Contact-us>p {
     display: block;
-    border: rgb(223, 150, 42) solid 5px;
+    /*border: rgb(223, 150, 42) solid 5px; */
     padding: 10px auto 0 20px;
 }
 .section-Contact-us-wrapper {
@@ -198,14 +198,57 @@ margin: 3% auto;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    margin-bottom: 20px;
 }
 .section-Contact-us-wrapper-left {
-    border: rgb(245, 63, 87) solid 2px;
     width: 40%;
-padding: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(143, 77, 143);
+    color: white;
+}
+.section-Contact-us-wrapper-left-email img {
+    
+    padding-top: 4%;
+    padding-left: 10%;   
+    
+    filter: invert(1);
+}
+.section-Contact-us-wrapper-left-text {
+    line-height: 172.35%;
+    letter-spacing: 0.04em;
+    padding-left: 10%;   
+}
+.section-Contact-us-wrapper-left img {
+    max-width: 24px;
+    float: left;
+    margin: 1% 3%;
+    filter: invert(1);
+    
+}
+.section-Contact-us-wrapper-left-icon {
+    padding-left: 10%;   
+    margin-top: 40px;
+}
+.section-contactr-left-designer {
+    margin-top: 20px;
+    font-weight: 700;
+    font-family: 'Ubuntu', sans-serif;
+    padding-left: 10%;   
+    margin-bottom: 2%;
+}
+.section-contactr-left-adres{
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+   padding-left: 10%;   
+   padding-bottom: 2%;
 }
 .section-Contact-us-wrapper-right {
     border: rgb(131, 105, 248) solid 2px;
     width: 40%;   
     padding: 20px;
+    
+}
+footer {
+    text-align: center;
 }
