@@ -9,7 +9,7 @@ body {
 .container {
 border: chocolate 2px solid;
 max-width: 1440px;
-height: 100vh;
+height: 150vh;
 margin: 0 auto;
 }
 /*-------------------------------------------------*/
@@ -41,34 +41,34 @@ header {
     text-decoration: none;
     color: purple;
 }
- /*photo*/
+            /*photo*/
 .header-photo {
-   /* background: linear-gradient(
-      rgba(0, 0, 0, 0.6),
-      rgba(0, 0, 0, 0.6); */
-    background-image: url(img/browniewww.jpg);
+    background: 
+    linear-gradient(
+        rgba(0, 0, 0, 0.6),
+        rgba(0, 0, 0, 0.6)
+      ),
+    url(img/browniewww.jpg);
     padding: 10px;
     background-size: cover;
     height: 40vh;
     opacity: .7;
 }
 .header-photo h3 {
-  
     text-align: center;
     font-size: 400%;
-    color: #ff;
+    color: #f3f3f7;
 }
 .header-photo h5 {
     display: inline-block;
     height: 20vh;
-
     text-align: left;
     font-size: 120%;
     color: purple;  
 }
 
 
-/* contact */
+            /* contact */
 .header-contact {
 
     padding: 10px;
@@ -94,9 +94,11 @@ header {
 /* section about me & skills */
 /*-------------------------------------------------*/
 
-section {
-    border: 3px solid #c7f301;
-  margin: 20;
+.section-about {
+    border: 5px solid #c7f301;
+  padding: 20;
+  display: flex;
+  flex-direction: column;
 }
 /* about me */
 
@@ -115,7 +117,7 @@ section {
     padding: 30px;
 }
 .section-about-me-right {
-    border: rgb(84, 245, 63) solid 2px;
+    border: rgb(84, 245, 63) solid 3px;
     padding: 30px;
 }
 
@@ -141,4 +143,69 @@ section {
 .section-skills-right {
     border: rgb(100, 62, 236) 2px solid;
     padding: 30px;
+}
+
+/*-------------------------------------------------*/
+/* section gallery (Portfolio) */
+/*-------------------------------------------------*/
+
+
+.section-Portfolio {
+    border: rgb(245, 63, 87) solid 2px;
+margin: 3% auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.section-Portfolio p {
+    display: inline-block;
+    text-align: center;
+    font-size: 200%;
+    color: #ff;
+    border: rgb(126, 20, 243) solid 2px;
+}
+.section-Portfolio-gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border: rgb(13, 72, 100) solid 2px;
+}
+.section-Portfolio-img {
+    border: rgb(126, 206, 243) solid 2px;
+    padding: 20px;
+    background-size: cover;
+    height: 40%;
+    opacity: .7;
+    bottom: 0%;
+}
+
+/*-------------------------------------------------*/
+/* section contact */
+/*-------------------------------------------------*/
+
+
+.section-Contact-us {
+    border: rgb(211, 31, 166) solid 2px;
+}
+.section-Contact-us p {
+    display: block;
+    border: rgb(223, 150, 42) solid 5px;
+    padding: 10px auto 0 20px;
+}
+.section-Contact-us-wrapper {
+    border: rgb(1, 112, 20) solid 2px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.section-Contact-us-wrapper-left {
+    border: rgb(245, 63, 87) solid 2px;
+    width: 40%;
+padding: 20px;
+}
+.section-Contact-us-wrapper-right {
+    border: rgb(131, 105, 248) solid 2px;
+    width: 40%;   
+    padding: 20px;
 }
