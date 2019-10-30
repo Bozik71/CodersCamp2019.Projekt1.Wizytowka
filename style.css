@@ -89,3 +89,56 @@ header {
     background-color: sandybrown;
     border-radius: 50px;
 }
+
+/*-------------------------------------------------*/
+/* section about me & skills */
+/*-------------------------------------------------*/
+
+section {
+    border: 3px solid #c7f301;
+  margin: 20;
+}
+/* about me */
+
+.section-about-me {
+    background-color: #fafaff;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    float: left;
+    width: 90%;
+    margin-top: 2%;
+}
+.section-about-me-left {
+    border: brown solid 2px;
+    padding: 30px;
+}
+.section-about-me-right {
+    border: rgb(84, 245, 63) solid 2px;
+    padding: 30px;
+}
+
+/* skills*/
+.section-skills {
+    background-color: #fafaff;
+    padding: 20px;
+ margin-top: 2%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    float: right;
+    width: 90%;
+}
+.section-skills-left {
+    border: rgb(100, 62, 236) 2px solid;
+    padding: 30px;
+}
+.section-skills-center {
+    border: rgb(100, 62, 236) 2px solid;
+    padding: 30px;
+}
+.section-skills-right {
+    border: rgb(100, 62, 236) 2px solid;
+    padding: 30px;
+}
