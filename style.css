@@ -21,7 +21,10 @@ header {
     
 }
 .header-nav {
-    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-end;
 }
 .logo {
     
@@ -64,7 +67,7 @@ header {
     height: 20vh;
     text-align: left;
     font-size: 120%;
-    color: purple;  
+    color: rgb(235, 85, 235);  
 }
 
 
@@ -152,17 +155,16 @@ header {
 
 .section-Portfolio {
     border: rgb(245, 63, 87) solid 2px;
-margin: 3% auto;
+    margin: 3% auto;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
 }
 .section-Portfolio p {
     display: inline-block;
-    text-align: center;
+    padding-left: 1%;
     font-size: 200%;
     color: #ff;
-    border: rgb(126, 20, 243) solid 2px;
 }
 .section-Portfolio-gallery {
     display: flex;
@@ -185,15 +187,17 @@ margin: 3% auto;
 
 
 .section-Contact-us {
-    border: rgb(211, 31, 166) solid 2px;
+    background: #FAFAFF;
+    padding-bottom: 3%;
+    padding-top: 2%;
 }
-.section-Contact-us>p {
-    display: block;
-    /*border: rgb(223, 150, 42) solid 5px; */
-    padding: 10px auto 0 20px;
+.section-Contact-us p {
+    display: inline-block;
+    padding-left: 1%;
+    font-size: 200%;
+    color: #ff;
 }
 .section-Contact-us-wrapper {
-    border: rgb(1, 112, 20) solid 2px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -208,16 +212,16 @@ margin: 3% auto;
     color: white;
 }
 .section-Contact-us-wrapper-left-email img {
-    
     padding-top: 4%;
     padding-left: 10%;   
-    
     filter: invert(1);
 }
 .section-Contact-us-wrapper-left-text {
-    line-height: 172.35%;
+    line-height: 170%;
     letter-spacing: 0.04em;
-    padding-left: 10%;   
+    padding-left: 10%; 
+    margin-top: 2%;  
+    font-size: 70%;
 }
 .section-Contact-us-wrapper-left img {
     max-width: 24px;
@@ -244,11 +248,31 @@ margin: 3% auto;
    padding-bottom: 2%;
 }
 .section-Contact-us-wrapper-right {
-    border: rgb(131, 105, 248) solid 2px;
+
     width: 40%;   
     padding: 20px;
+    background-color: #ffffff;
+}
+form {
+ 
+    display: flex;
+    flex-direction: column;
+    margin: 2%;
+}
+.section-Contact-us-wrapper-right p{
+    font-size: 200%;
+}
+form input, form textarea {
     
+    padding: 1%;
+    margin-top:2%;
+    background: #FAFAFF;
+    border-radius: 13px;
+    font-family: 'Ubuntu', sans-serif;
+    display: flex;
+    align-items: center;
 }
 footer {
+    padding-top: 1%;
     text-align: center;
 }
