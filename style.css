@@ -5,94 +5,97 @@
 body {
     font-family: 'Raleway', sans-serif;
     box-sizing: border-box;
+    font-size: 1em;
 }
 .container {
-border: chocolate 2px solid;
-max-width: 1440px;
-height: 200vh;
-margin: 0 auto;
+    border: #ad5389 3px solid;
+    max-width: 1440px;
+    height: 200vh;
+    margin: 0 auto;
 }
 /*-------------------------------------------------*/
 /* header */
 /*-------------------------------------------------*/
 header {
-
-    border: rgb(100, 62, 236) 2px solid;
     
 }
 .header-nav {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: flex-end;
-    border: rgb(252, 15, 55) 2px solid;
 }
-.logo {
-    border: rgb(34, 236, 111) 2px solid;
-    
-   
-}
+
 /* nawigacja */
 .header-nav-ul {
     padding: 1% 2%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    border: rgb(81, 83, 238) 2px solid;
-   
+    font-size: 1.5em;
+    letter-spacing: 0.02em;
+    font-weight: bold;
+    text-shadow: 1px 1px 4px rgb(112, 111, 111);
+
 }
 .menu_items {
-    margin: 5px;
+    display: inline-block;
+    padding: 0 1.3rem;
     text-decoration: none;
-    color: purple;
+    color: #411857;
+
 }
             /*photo*/
 .header-photo {
     background: 
     linear-gradient(
-        rgba(0, 0, 0, 0.6),
-        rgba(0, 0, 0, 0.6)
+        rgba(143, 77, 143, 0.1),
+        rgba(143, 77, 143, 0.1)
       ),
-    url(img/browniewww.jpg);
-    padding: 10px;
+    url(img/baner.jpg);
     background-size: cover;
-    height: 40vh;
     opacity: .7;
+    height: 25em;
 }
 .header-photo h3 {
+    padding: .8em;
     text-align: center;
     font-size: 400%;
     color: #f3f3f7;
+    text-shadow: 2px 2px 1px rgb(20, 20, 20);
+
 }
 .header-photo h5 {
-    display: inline-block;
-    height: 20vh;
-    text-align: left;
-    font-size: 120%;
-    color: rgb(235, 85, 235);  
+    padding-bottom: .2em;
+    text-align: center;
+    font-size: 200%;
+    color: #f3f3f7;
+    text-shadow: 2px 2px 1px rgb(20, 20, 20);
 }
-
 
             /* contact */
 .header-contact {
-
-    padding: 10px;
+    padding: 4em;
     text-align: center;
     
 }
 .header-contact p {
-
     color: purple;
-    font-size: 140%;
+    font-size: 200%;
     text-align: center;
-    margin: 20px;
+    margin: 1.5rem;
+    padding-bottom: 2rem;
+    text-shadow: 1px 1px 3px rgb(112, 111, 111); 
 }
 .header-contact a {
+
     text-decoration: none;
-    color: purple;
-    padding: 5px;
-    background-color: sandybrown;
+    color: whitesmoke;
+    padding: 1rem;
+    background: linear-gradient(270deg,  #ad5389 14%, #3c1053 68.5%);
     border-radius: 50px;
+    font-size: 2em;
+    margin: 1.2rem;
 }
 
 /*-------------------------------------------------*/
@@ -100,60 +103,115 @@ header {
 /*-------------------------------------------------*/
 
 .section-about {
-    border: 5px solid #c7f301;
-  padding: 20;
-  display: flex;
-  flex-direction: column;
+    border: rgb(134, 134, 20) 3px solid;
+    display: flex;
+    flex-direction: column;
 }
 /* about me */
 
 .section-about-me {
     background-color: #fafaff;
-    padding: 20px;
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    float: left;
-    width: 90%;
+    justify-content: space-between;
+    width: 92%;
+    height: 50%;
     margin-top: 2%;
+    
 }
 .section-about p {
     display: inline-block;
     padding-left: 1%;
     font-size: 200%;
     color: #ff;
+    margin-top: 1em;    
+    color: purple;
+    font-weight: 700;
 }
 .section-about-me-left {
-    border: brown solid 2px;
-    padding: 30px;
+
+    padding: 1em;;
 }
+/* about me let side */
+.section-about-me-left{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.section-about-me-left>img{
+
+    width: 12em;
+    height: 12em;
+    border-radius: 50%;
+}
+.section-about-me-left-ul {
+    display: flex;
+    flex-direction: column;
+    width: 66%;
+
+}
+.section-about-me-left-ul li {
+ 
+    list-style: none;
+    font-size: 1.5em;
+    color: purple;
+    padding: .8rem;
+    
+}
+.section-about-me-left-ul li span {
+    color: rgb(36, 36, 36);
+    font-weight: 700;
+
+}
+/* about me right */
 .section-about-me-right {
-    border: rgb(84, 245, 63) solid 3px;
-    padding: 30px;
+  
+    padding: 0 1rem 1rem 1rem;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.04em;
+    width: 50%;
+}
+ /* text about me (right side) */
+.section-about-me-right p {
+    font-size: 1.2em;
+    padding: 1em;
+    border-left: .4rem dotted purple;
 }
 
 /* skills*/
 .section-skills {
+    float: right;
     background-color: #fafaff;
-    padding: 20px;
-    margin-top: 2%;
+    padding: 3em;
+    margin-top: 2%  ;
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    float: right;
-    width: 90%;
+    justify-content: space-between;
+    align-items: baseline;
+    width: 85%;
+    align-self: flex-end;
+    color: purple;
+    height: 50%;
+    
 }
 .section-skills-left {
-    border: rgb(100, 62, 236) 2px solid;
-    padding: 30px;
+    border-right: .4rem dotted rgb(143, 77, 143);
+    padding: 1em;
+    text-align: center;
+    width: 32%;
+
 }
 .section-skills-center {
-    border: rgb(100, 62, 236) 2px solid;
-    padding: 30px;
+    border-right: .4rem  dotted rgb(143, 77, 143);
+    padding: 1em;
+    text-align: center;
+    width: 32%;
 }
 .section-skills-right {
-    border: rgb(100, 62, 236) 2px solid;
-    padding: 30px;
+    width: 32%;
+    padding: 1em;
+    text-align: center;
 }
 
 /*-------------------------------------------------*/
@@ -173,6 +231,8 @@ header {
     padding-left: 1%;
     font-size: 200%;
     color: #ff;
+    font-weight: 700;
+    color: purple;
 }
 .section-Portfolio-gallery {
     display: flex;
@@ -199,11 +259,12 @@ header {
     padding-bottom: 3%;
     padding-top: 2%;
 }
-.section-Contact-us p {
+.section-Contact-us>p {
     display: inline-block;
     padding-left: 1%;
     font-size: 200%;
-    color: #ff;
+    color: purple;
+    font-weight: 700;
 }
 .section-Contact-us-wrapper {
     display: flex;
@@ -216,7 +277,7 @@ header {
     width: 40%;
     display: flex;
     flex-direction: column;
-    background-color: rgb(143, 77, 143);
+    background: linear-gradient(270deg,  #ad5389 14%, #3c1053 68.5%);
     color: white;
 }
 .section-Contact-us-wrapper-left-email img {
@@ -225,11 +286,12 @@ header {
     filter: invert(1);
 }
 .section-Contact-us-wrapper-left-text {
-    line-height: 170%;
+    line-height: 190%;
     letter-spacing: 0.04em;
-    padding-left: 10%; 
+    padding-left: 5em; 
     margin-top: 2%;  
     font-size: 70%;
+    
 }
 .section-Contact-us-wrapper-left img {
     max-width: 24px;
@@ -246,15 +308,17 @@ header {
     margin-top: 20px;
     font-weight: 700;
     font-family: 'Ubuntu', sans-serif;
-    padding-left: 10%;   
+    padding-left: 3em;   
     margin-bottom: 2%;
     line-height: 25px;
+    font-size: 1.3em;
 }
 .section-contactr-left-adres{
     font-family: 'Ubuntu', sans-serif;
     color: white;
-   padding-left: 10%;   
+   padding-left: 3em;   
    padding-bottom: 2%;
+   font-size: 1.3em;
 }
 .section-Contact-us-wrapper-right {
 
@@ -270,6 +334,7 @@ form {
 }
 .section-Contact-us-wrapper-right p{
     font-size: 200%;
+    color: purple;
 }
 form input, form textarea {
     
