@@ -8,7 +8,7 @@ body {
     font-size: 1em;
 }
 .container {
-    border: #ad5389 3px solid;
+
     max-width: 1440px;
     height: 200vh;
     margin: 0 auto;
@@ -36,10 +36,13 @@ body {
     letter-spacing: 0.02em;
     font-weight: bold;
     text-shadow: 1px 1px 4px rgb(112, 111, 111);
-
+}
+.menu_items:hover, .menu_items:active {
+        text-decoration: underline;
+        transform: scaleY(1.1);
+        transition: all .1s ease-in-out;
 }
 .menu_items {
-   /* display: inline-block; */
     padding: 0 1.3rem;
     text-decoration: none;
     color: #411857;
@@ -86,9 +89,16 @@ body {
     color: whitesmoke;
     padding: 1rem;
     background: linear-gradient(270deg,  #ad5389 14%, #3c1053 68.5%);
+    border: purple 1px solid;
     border-radius: 50px;
     font-size: 2em;
     margin: 1.2rem;
+}
+.header-contact a:hover, .header-contact a:active {
+    background:0;
+    color: purple;
+    border: purple 1px solid;
+    transition: ease-in-out .5s all;
 }
 
 /*-------------------------------------------------*/
@@ -96,13 +106,12 @@ body {
 /*-------------------------------------------------*/
 
 .section-about {
- 
     display: flex;
     flex-direction: column;
 }
 /* about me */
-
 .section-about-me {
+   
     background-color: #fafaff;
     display: flex;
     flex-direction: row;
@@ -110,21 +119,19 @@ body {
     width: 92%;
     height: 50%;
     margin-top: 2%;
-    
 }
 .section-about>p {
     font-weight: 700;
     font-size: 200%;
-  
 }
 .section-about p {
     display: inline-block;
     padding-left: 1%;
-    color: #ff;
+    color: #ffffff;
     margin-top: 1em;    
     color: purple;
 }
-.section-about-me-left {
+.section-about-me-left { 
     padding: 10px 0;
     margin: 0;
 }
@@ -137,15 +144,18 @@ body {
 .section-about-me-left>img{
     width: 12em;
     height: 12em;
+    margin: 1em;
     border-radius: 50%;
     display: flex;
     align-self: center;
 }
 .section-about-me-left-ul {
     display: flex;
-    flex-direction: column;
+    flex-direction: column; 
+    align-content: center;
+    align-items: center;
     width: 50%; 
-    margin: 1em;
+    margin: auto 0;
 }
 .section-about-me-left-ul li {
     list-style: none;
@@ -161,7 +171,6 @@ body {
 }
 /* about me right */
 .section-about-me-right {
-  
     padding: 0 1rem 1rem 1rem;
     display: flex;
     align-items: center;
@@ -190,10 +199,9 @@ body {
     align-self: flex-end;
     color: purple;
     height: 50%;
-    
+                     
 }
 .section-skills-left {
-    
     border-right: .4rem dotted rgb(143, 77, 143);
     padding: 1em;
     text-align: center;
@@ -218,7 +226,6 @@ body {
 }
 .section-skills img {
    height: 100px;
-
 }
 
 /*-------------------------------------------------*/
@@ -227,33 +234,36 @@ body {
 
 
 .section-Portfolio {
-    border: rgb(245, 63, 87) solid 2px;
+    
     margin: 3% auto;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
 }
 .section-Portfolio p {
+    margin-bottom: 2rem;
     display: inline-block;
     padding-left: 1%;
     font-size: 200%;
-    color: #ff;
+    color: #ffffff;
     font-weight: 700;
     color: purple;
 }
 .section-Portfolio-gallery {
     display: flex;
     flex-direction: row;
+    justify-content: center;
     flex-wrap: wrap;
-    border: rgb(13, 72, 100) solid 2px;
 }
 .section-Portfolio-img {
-    border: rgb(126, 206, 243) solid 2px;
-    padding: 20px;
-    background-size: cover;
-    height: 40%;
+    align-self: center;
     opacity: .7;
     bottom: 0%;
+    width: 33%;
+}
+
+.section-Portfolio-img:hover, .section-Portfolio-img:active {
+    opacity: 1;
 }
 
 /*-------------------------------------------------*/
@@ -287,37 +297,35 @@ body {
     background: linear-gradient(270deg,  #ad5389 14%, #3c1053 68.5%);
     color: white;
 }
-.section-Contact-us-wrapper-left-email img {
-    padding-top: 4%;
-    padding-left: 3rem;   
+.section-Contact-us-wrapper-left-email>img {
+    margin: 10rem 0% 0% 10rem;
     filter: invert(1);
-    width: 200;
-    text-align: center;
+    width: 10rem;
 }
 .section-Contact-us-wrapper-left-text {
     line-height: 190%;
     letter-spacing: 0.04em;
     padding-left: 4rem; 
     margin-top: 2%;  
-    font-size: 1.2rem;
-    
+    font-size: 1.2rem;  
+
 }
+                /* ikons */
 .section-Contact-us-wrapper-left img {
-    max-width: 24px;
+    max-width: 48px;
     float: left;
     margin: 1% 3%;
     filter: invert(1);
-    
 }
-.section-Contact-us-wrapper-left-icon {
-    padding-left: 10%;   
+.section-Contact-us-wrapper-left-icon { 
     margin-top: 40px;
+    padding-left: 4rem; 
 }
 .section-contactr-left-designer {
     margin-top: 2rem;
     font-weight: 700;
     font-family: 'Ubuntu', sans-serif;
-    padding-left: 3em;   
+    padding-left: 4rem;   
     margin-bottom: 2%;
     font-size: 1.3em;
   
@@ -325,13 +333,12 @@ body {
 .section-contactr-left-adres{
     font-family: 'Ubuntu', sans-serif;
     color: white;
-    padding-left: 3em;   
+    padding-left: 4rem;   
     padding-bottom: 2%;
     font-size: 1.3em;
     line-height: 1.4em;
 }
 .section-Contact-us-wrapper-right {
-
     width: 40%;   
     padding: 20px;
     background-color: #ffffff;
@@ -376,10 +383,24 @@ footer {
     .section-about-me-right p {
     font-size: 1em;}
 }
+
+@media (max-width: 1378px){
+    .section-about-me-left>img {
+        width: 10em;
+        height: 10em;
+    }
+    .section-Portfolio-img {
+        width: 50%;
+    }
+}
 @media (max-width: 1200px) {
     .section-about-me {
         flex-direction: column;
         align-items: center;
+    }
+    .section-about-me-left-ul {
+        width: 100%; 
+        text-align: center  ;
     }
     .section-about-me-right p {
         border-left: none;
@@ -394,36 +415,47 @@ footer {
     .menu_items {
         padding: 0 1.1rem;
     }
+    /* ikons contact */
+    .section-Contact-us-wrapper-left-email img {
+        max-width: 4rem;
+    }
+
+.first-icon img {
+    border: tomato 3px solid;
+    max-width: 4rem;
+    padding-left: 3rem;
+}
     .header-contact p {
-        font-size: 160%;
-        margin: 1.2rem;
+        font-size: 1.3rem;
         padding-bottom: 1.5rem;
+        padding-left: 2rem;
     }
     .section-contactr-left-designer {
         margin-top: 2rem;
-        font-weight: 700;
-        font-family: 'Ubuntu', sans-serif;
-        padding-left: 3em;   
+        padding-left: 3rem;   
         margin-bottom: 2%;
         line-height: 25px;
         font-size: 1.3em;
     }
-}
-@media (max-width: 1378px){
-    .section-about-me-left>img {
-        width: 10em;
-        height: 10em;
+    .section-contactr-left-adres {
+        padding-left: 3rem;
     }
+
+
+
+
+
+
+
 }
-@media (max-width: 956px) {
+@media (max-width: 960px) {
     .header-nav img {
         width: 100px;
     }
     .header-contact p {
         font-size: 150%;
-        margin-bottom;: .5rem;
+        margin-bottom: .5rem;
         padding-bottom: 1rem;
-     
         }
     .header-photo {
             margin:0;
@@ -435,40 +467,93 @@ footer {
                 padding: 0;
                 font-size: 1em;
             }
+            .section-about-me {
+
+                width: 100%;
+           
+            }
+                                   .section-skills {
+
+                width: 95%;
+
+            }
     .section-skills img {
                 height: 80px;
              }
+             
+    .section-Contact-us-wrapper {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                margin-bottom: 20px;
+                width: 100%;
+            }
+    .section-Contact-us-wrapper-left {
+                width: 100%;
+            }
     .section-Contact-us-wrapper-left-text>p {
-   font-size: 0px;
+            font-size: 1em;
+            width: 100%;
+    }
+ 
+    .section-Contact-us-wrapper-left-icon img {
+        position: relative;
+        left: -2rem;
+        margin: 1rem 2rem 1rem 0rem;
+        max-width: 40px;    
+    }
+
+
+
+
+
+
+    .section-Contact-us-wrapper-right {
+        align-self: center;
+        width: 90%;   
+        padding: 2rem auto;
+        background-color: #ffffff;
     }
     form button { 
-        padding: .6rem;
+        padding: .6rem; 
         font-size: 1.6em;
         width: 8rem;  
-
     }
+}
+@media (max-width: 750px){
+    .section-Portfolio-img {
+        width: 100%;
+    }
+    .section-Contact-us-wrapper-left-icon{
+        position: relative;
+        left: -10px;
+ 
+    }
+
+
+
+
+
 }
 @media (max-width: 700px){
     .header-nav-ul {
+        margin: 0px auto;
+        justify-content: center;
         padding: 1% .8%;
         font-size: 1.2em;
-        }
-
+    }
     .header-photo {
         height: 15em;
     }
-
     .header-photo h3 {
         padding: .3em;
         font-size: 3em;
         text-shadow: 1px 1px 1px rgb(20, 20, 20);
     }
-
     .header-photo h5 {
         font-size: 1.4em;
         text-shadow: 1px 1px 1px rgb(20, 20, 20);
     }
-
     .header-contact>p {
         font-size: 1.4em;
         margin: 0;
@@ -476,31 +561,66 @@ footer {
         padding-bottom: 1.4rem;
         text-shadow: 1px 1px 1px rgb(112, 111, 111); 
     }
-
     .header-contact {
+     
         padding: 1em;
     }
-
     .header-contact a {
         padding: .6rem;
         font-size: 1.2em;
         margin: 1rem;
     }
-
     .section-about-me-right {
-    width: 75%;
-    }
-}
-@media ( max-width: 560px) {
-    .header-nav-ul {
-       margin: 0px auto;
-        justify-content;: center;
-    }
-    .section-about-me-right {
-                    border: #ad5389 1px solid;
         width: 95%;
-       
     }
+    .section-skills img {
+        height: 70px;
+     }
+     .section-skills {
+        padding: 0;
+        margin-top: 2% ;
+        flex-direction: column;
+        width: 100%;
+        align-self: flex-start;
+        height: 100%;
+    }
+    .section-skills-left {
+        align-self: center ;
+        border-right: 0;
+        font-size: 1.2rem;
+        font-weight: 400;
+    }
+    .section-skills-center {
+        align-self: center ;
+        border-right: 0;
+        font-size: 1.2rem;
+        font-weight: 400;
+    }
+    .section-skills-right {
+        align-self: center ;
+        padding: 0 0 5px 0;
+        font-size: 1.2rem;
+        font-weight: 400;
+    }
+  
+
+}
+@media (max-width:480px) {
+   
+    .header-nav-ul {
+        padding: .5% .8%;
+        font-size: 1em;
+        }
+    .header-contact a {
+            padding: .6rem;
+            font-size: .9rem;
+            margin: 1rem;
+        }
+        form button { 
+            padding: .4rem; 
+            font-size: 1.2em;
+            width: 6rem;  
+        }
 }
 
 
