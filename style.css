@@ -234,7 +234,6 @@ body {
 
 
 .section-Portfolio {
-    
     margin: 3% auto;
     display: flex;
     flex-direction: column;
@@ -277,6 +276,7 @@ body {
     padding-top: 2%;
 }
 .section-Contact-us>p {
+   
     display: inline-block;
     padding-left: 1%;
     font-size: 200%;
@@ -289,6 +289,7 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     margin-bottom: 20px;
+    
 }
 .section-Contact-us-wrapper-left {
     width: 40%;
@@ -296,21 +297,27 @@ body {
     flex-direction: column;
     background: linear-gradient(270deg,  #ad5389 14%, #3c1053 68.5%);
     color: white;
+     
 }
 .section-Contact-us-wrapper-left-email>img {
     margin: 10rem 0% 0% 10rem;
+    position: relative;
     filter: invert(1);
     width: 10rem;
+  
 }
 .section-Contact-us-wrapper-left-text {
+    position: absolute
+    top: 10rem
+    left: 3rem;
     line-height: 190%;
     letter-spacing: 0.04em;
     padding-left: 4rem; 
     margin-top: 2%;  
-    font-size: 1.2rem;  
-
+    font-size: 1.2rem;    
 }
-                /* ikons */
+                /* ikons !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+              
 .section-Contact-us-wrapper-left img {
     max-width: 48px;
     float: left;
@@ -415,37 +422,37 @@ footer {
     .menu_items {
         padding: 0 1.1rem;
     }
-    /* ikons contact */
+
+        /* ikon email */
     .section-Contact-us-wrapper-left-email img {
         max-width: 4rem;
+        
     }
-
-.first-icon img {
-    border: tomato 3px solid;
-    max-width: 4rem;
+        /* ikons contact */
+    .first-icon img {
+    max-width: 3rem;
     padding-left: 3rem;
-}
-    .header-contact p {
+     }
+     .header-contact p {
         font-size: 1.3rem;
         padding-bottom: 1.5rem;
         padding-left: 2rem;
     }
+    .section-Contact-us-wrapper-left-icon { 
+            margin-top: 20px;
+            padding-left: 0rem; 
+        }
+    /* adress */ 
     .section-contactr-left-designer {
         margin-top: 2rem;
-        padding-left: 3rem;   
+        padding-left: 3.4rem;   
         margin-bottom: 2%;
         line-height: 25px;
         font-size: 1.3em;
     }
     .section-contactr-left-adres {
-        padding-left: 3rem;
+        padding-left: 3.4rem;
     }
-
-
-
-
-
-
 
 }
 @media (max-width: 960px) {
@@ -472,10 +479,8 @@ footer {
                 width: 100%;
            
             }
-                                   .section-skills {
-
+     .section-skills {
                 width: 95%;
-
             }
     .section-skills img {
                 height: 80px;
@@ -495,18 +500,12 @@ footer {
             font-size: 1em;
             width: 100%;
     }
- 
+
     .section-Contact-us-wrapper-left-icon img {
         position: relative;
-        left: -2rem;
-        margin: 1rem 2rem 1rem 0rem;
-        max-width: 40px;    
+        left: -1rem;
+        max-width: 40px;   
     }
-
-
-
-
-
 
     .section-Contact-us-wrapper-right {
         align-self: center;
@@ -524,15 +523,6 @@ footer {
     .section-Portfolio-img {
         width: 100%;
     }
-    .section-Contact-us-wrapper-left-icon{
-        position: relative;
-        left: -10px;
- 
-    }
-
-
-
-
 
 }
 @media (max-width: 700px){
@@ -602,6 +592,9 @@ footer {
         font-size: 1.2rem;
         font-weight: 400;
     }
+    .section-Portfolio p {
+        margin-bottom: .5rem;
+    }
   
 
 }
@@ -616,11 +609,20 @@ footer {
             font-size: .9rem;
             margin: 1rem;
         }
-        form button { 
+    form button { 
             padding: .4rem; 
             font-size: 1.2em;
             width: 6rem;  
         }
+        .section-Contact-us-wrapper-left-text {
+            position: absolute
+            top: 10rem
+            left: 1rem;
+            line-height: 100%;
+            letter-spacing: 0;   
+        }
+
+
 }
 
 
