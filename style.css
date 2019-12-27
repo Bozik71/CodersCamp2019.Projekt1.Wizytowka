@@ -1,0 +1,695 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    box-sizing: border-box;
+    font-size: 1em;
+}
+
+.container {
+    max-width: 1440px;
+    height: 200vh;
+    margin: 0 auto;
+}
+
+/*-------------------------------------------------*/
+/* header */
+/*-------------------------------------------------*/
+.header-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.header-nav img {
+    width: 180x;
+}
+
+/* nawigacja */
+.header-nav-ul {
+    padding: 1% 2%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 1.5em;
+    letter-spacing: 0.02em;
+    font-weight: bold;
+    text-shadow: 1px 1px 4px rgb(112, 111, 111);
+}
+
+.menu_items:hover,
+.menu_items:active {
+    text-decoration: underline;
+    transform: scaleY(1.1);
+    transition: all .1s ease-in-out;
+}
+
+.menu_items {
+    padding: 0 1.3rem;
+    text-decoration: none;
+    color: #411857;
+}
+
+/*photo*/
+.header-photo {
+    background: linear-gradient(rgba(143, 77, 143, 0.1), rgba(143, 77, 143, 0.1)), url(img/baner.jpg);
+    background-size: cover;
+    opacity: .7;
+    height: 25em;
+}
+
+.header-photo h3 {
+    padding: .8em;
+    text-align: center;
+    font-size: 400%;
+    color: #f3f3f7;
+    text-shadow: 2px 2px 1px rgb(20, 20, 20);
+}
+
+.header-photo h5 {
+    padding-bottom: .2em;
+    text-align: center;
+    font-size: 200%;
+    color: #f3f3f7;
+    text-shadow: 2px 2px 1px rgb(20, 20, 20);
+}
+
+/* contact */
+.header-contact {
+    padding: 4em;
+    text-align: center;
+}
+
+.header-contact p {
+    color: purple;
+    font-size: 200%;
+    text-align: center;
+    margin: 1.5rem;
+    padding-bottom: 2rem;
+    text-shadow: 1px 1px 3px rgb(112, 111, 111);
+}
+
+/* buttons */
+.header-contact a {
+    text-decoration: none;
+    color: whitesmoke;
+    padding: 1rem;
+    background: linear-gradient(270deg, #ad5389 14%, #3c1053 68.5%);
+    border: purple 1px solid;
+    border-radius: 50px;
+    font-size: 2em;
+    margin: 1.2rem;
+}
+
+.header-contact a:hover,
+.header-contact a:active {
+    background: 0;
+    color: purple;
+    border: purple 1px solid;
+    transition: ease-in-out .5s all;
+}
+
+/*-------------------------------------------------*/
+/* section about me & skills */
+/*-------------------------------------------------*/
+
+.section-about {
+    display: flex;
+    flex-direction: column;
+}
+
+/* about me */
+.section-about-me {
+    background-color: #fafaff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 92%;
+    height: 50%;
+    margin-top: 2%;
+}
+
+.section-about > p {
+    font-weight: 700;
+    font-size: 200%;
+}
+
+.section-about p {
+    display: inline-block;
+    padding-left: 1%;
+    color: #ffffff;
+    margin-top: 1em;
+    color: purple;
+}
+
+.section-about-me-left {
+    padding: 10px 0;
+    margin: 0;
+}
+
+/* about me let side */
+.section-about-me-left {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.section-about-me-left > img {
+    width: 12em;
+    height: 12em;
+    margin: 1em;
+    border-radius: 50%;
+    display: flex;
+    align-self: center;
+}
+
+.section-about-me-left-ul {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    width: 50%;
+    margin: auto 0;
+}
+
+.section-about-me-left-ul li {
+    list-style: none;
+    font-size: 1.5em;
+    color: purple;
+    padding: .8rem;
+}
+
+.section-about-me-left-ul li span {
+    color: rgb(36, 36, 36);
+    font-weight: 700;
+}
+
+/* about me right */
+.section-about-me-right {
+    padding: 0 1rem 1rem 1rem;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.04em;
+    width: 50%;
+}
+
+/* text about me (right side) */
+.section-about-me-right p {
+    font-size: 1.2em;
+    padding: 1em;
+    text-align: justify;
+    border-left: .4rem dotted purple;
+}
+
+/* skills*/
+.section-skills {
+    float: right;
+    background-color: #fafaff;
+    padding: 3em;
+    margin-top: 2%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    width: 85%;
+    align-self: flex-end;
+    color: purple;
+    height: 50%;
+}
+
+.section-skills-left {
+    border-right: .4rem dotted rgb(143, 77, 143);
+    padding: 1em;
+    text-align: center;
+    width: 32%;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.section-skills-center {
+    border-right: .4rem dotted rgb(143, 77, 143);
+    padding: 1em;
+    text-align: center;
+    width: 32%;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.section-skills-right {
+    width: 32%;
+    padding: 1em;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.section-skills img {
+    height: 100px;
+}
+
+/*-------------------------------------------------*/
+/* section gallery (Portfolio) */
+/*-------------------------------------------------*/
+
+
+.section-Portfolio {
+    margin: 3% auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.section-Portfolio p {
+    margin-bottom: 2rem;
+    display: inline-block;
+    padding-left: 1%;
+    font-size: 200%;
+    color: #ffffff;
+    font-weight: 700;
+    color: purple;
+}
+
+.section-Portfolio-gallery {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.section-Portfolio-img {
+    align-self: center;
+    opacity: .7;
+    bottom: 0%;
+    width: 33%;
+}
+
+.section-Portfolio-img:hover,
+.section-Portfolio-img:active {
+    opacity: 1;
+}
+
+/*-------------------------------------------------*/
+/* section contact */
+/*-------------------------------------------------*/
+
+
+.section-Contact-us {
+    background: #FAFAFF;
+    padding-bottom: 3%;
+    padding-top: 2%;
+}
+
+.section-Contact-us > p {
+
+    display: inline-block;
+    padding-left: 1%;
+    font-size: 200%;
+    color: purple;
+    font-weight: 700;
+}
+
+.section-Contact-us-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.section-Contact-us-wrapper-left {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(270deg, #ad5389 14%, #3c1053 68.5%);
+    color: white;
+}
+
+.section-Contact-us-wrapper-left-email > img {
+    margin: 10rem 0% 0% 10rem;
+    position: relative;
+    filter: invert(1);
+    width: 10rem;
+}
+
+.section-Contact-us-wrapper-left-text {
+    position: absolute top: 10rem left: 3rem;
+    line-height: 190%;
+    letter-spacing: 0.04em;
+    padding-left: 4rem;
+    margin-top: 2%;
+    font-size: 1.2rem;
+}
+
+/* ikons */
+
+.section-Contact-us-wrapper-left img {
+    max-width: 48px;
+    float: left;
+    margin: 1% 3%;
+    filter: invert(1);
+}
+
+.section-Contact-us-wrapper-left-icon {
+    margin-top: 40px;
+    padding-left: 4rem;
+}
+
+.section-contactr-left-designer {
+    margin-top: 2rem;
+    font-weight: 700;
+    font-family: 'Ubuntu', sans-serif;
+    padding-left: 4rem;
+    margin-bottom: 2%;
+    font-size: 1.3em;
+}
+
+.section-contactr-left-adres {
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+    padding-left: 4rem;
+    padding-bottom: 2%;
+    font-size: 1.3em;
+    line-height: 1.4em;
+}
+
+.section-Contact-us-wrapper-right {
+    width: 40%;
+    padding: 20px;
+    background-color: #ffffff;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin: 2%;
+}
+
+/* button - 'Send' */
+form button {
+    color: whitesmoke;
+    padding: .8rem;
+    background: linear-gradient(270deg, #ad5389 14%, #3c1053 68.5%);
+    border-radius: 50px;
+    font-size: 1.8em;
+    margin: 1rem;
+    width: 10rem;
+    align-self: center;
+}
+
+.section-Contact-us-wrapper-right p {
+    font-size: 200%;
+    color: purple;
+}
+
+form input,
+form textarea {
+    padding: 1rem;
+    margin-top: 2%;
+    background: #FAFAFF;
+    border-radius: 13px;
+    font-family: 'Ubuntu', sans-serif;
+    display: flex;
+    align-items: center;
+}
+
+footer {
+    padding-top: 1%;
+    text-align: center;
+}
+
+@media (max-width:1400px) {
+    .section-about-me-left-ul li {
+        font-size: 1.2em;
+    }
+
+    .section-about-me-right p {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 1378px) {
+    .section-about-me-left > img {
+        width: 10em;
+        height: 10em;
+    }
+
+    .section-Portfolio-img {
+        width: 50%;
+    }
+}
+
+@media (max-width: 1200px) {
+    .section-about-me {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section-about-me-left-ul {
+        width: 100%;
+        text-align: center;
+    }
+
+    .section-about-me-right p {
+        border-left: none;
+        border-top: .4rem dotted purple;
+        font-size: 1em;
+    }
+
+    .header-contact a {
+        padding: .9rem;
+        font-size: 1.5em;
+        margin: 1rem;
+    }
+
+    .menu_items {
+        padding: 0 1.1rem;
+    }
+
+    /* ikon email */
+    .section-Contact-us-wrapper-left-email img {
+        max-width: 4rem;
+    }
+
+    /* ikons contact */
+    .first-icon img {
+        max-width: 3rem;
+        padding-left: 3rem;
+    }
+
+    .header-contact p {
+        font-size: 1.3rem;
+        padding-bottom: 1.5rem;
+        padding-left: 2rem;
+    }
+
+    .section-Contact-us-wrapper-left-icon {
+        margin-top: 20px;
+        padding-left: 0rem;
+    }
+
+    /* adress */
+    .section-contactr-left-designer {
+        margin-top: 2rem;
+        padding-left: 3.4rem;
+        margin-bottom: 2%;
+        line-height: 25px;
+        font-size: 1.3em;
+    }
+
+    .section-contactr-left-adres {
+        padding-left: 3.4rem;
+    }
+
+}
+
+@media (max-width: 960px) {
+    .header-nav img {
+        width: 100px;
+    }
+
+    .header-contact p {
+        font-size: 150%;
+        margin-bottom: .5rem;
+        padding-bottom: 1rem;
+    }
+
+    .header-photo {
+        margin: 0;
+    }
+
+    .section-about-me-right p {
+        border-left: none;
+        border-top: .4rem dotted purple;
+        margin: 3px;
+        padding: 0;
+        font-size: 1em;
+    }
+
+    .section-about-me {
+        width: 100%;
+    }
+
+    .section-skills {
+        width: 95%;
+    }
+
+    .section-skills img {
+        height: 80px;
+    }
+
+    .section-Contact-us-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+
+    .section-Contact-us-wrapper-left {
+        width: 100%;
+    }
+
+    .section-Contact-us-wrapper-left-text > p {
+        font-size: 1em;
+        width: 100%;
+    }
+
+    .section-Contact-us-wrapper-left-icon img {
+        position: relative;
+        left: -1rem;
+        max-width: 40px;
+    }
+
+    .section-Contact-us-wrapper-right {
+        align-self: center;
+        width: 90%;
+        padding: 2rem auto;
+        background-color: #ffffff;
+    }
+
+    form button {
+        padding: .6rem;
+        font-size: 1.6em;
+        width: 8rem;
+    }
+}
+
+@media (max-width: 750px) {
+    .section-Portfolio-img {
+        width: 100%;
+    }
+}
+
+@media (max-width: 700px) {
+    .header-nav-ul {
+        margin: 0px auto;
+        justify-content: center;
+        padding: 1% .8%;
+        font-size: 1.2em;
+    }
+
+    .header-photo {
+        height: 15em;
+    }
+
+    .header-photo h3 {
+        padding: .3em;
+        font-size: 3em;
+        text-shadow: 1px 1px 1px rgb(20, 20, 20);
+    }
+
+    .header-photo h5 {
+        font-size: 1.4em;
+        text-shadow: 1px 1px 1px rgb(20, 20, 20);
+    }
+
+    .header-contact > p {
+        font-size: 1.4em;
+        margin: 0;
+        padding-top: 0;
+        padding-bottom: 1.4rem;
+        text-shadow: 1px 1px 1px rgb(112, 111, 111);
+    }
+
+    .header-contact {
+        padding: 1em;
+    }
+
+    .header-contact a {
+        padding: .6rem;
+        font-size: 1.2em;
+        margin: 1rem;
+    }
+
+    .section-about-me-right {
+        width: 95%;
+    }
+
+    .section-skills img {
+        height: 70px;
+    }
+
+    .section-skills {
+        padding: 0;
+        margin-top: 2%;
+        flex-direction: column;
+        width: 100%;
+        align-self: flex-start;
+        height: 100%;
+    }
+
+    .section-skills-left {
+        align-self: center;
+        border-right: 0;
+        font-size: 1.2rem;
+        font-weight: 400;
+    }
+
+    .section-skills-center {
+        align-self: center;
+        border-right: 0;
+        font-size: 1.2rem;
+        font-weight: 400;
+    }
+
+    .section-skills-right {
+        align-self: center;
+        padding: 0 0 5px 0;
+        font-size: 1.2rem;
+        font-weight: 400;
+    }
+
+    .section-Portfolio p {
+        margin-bottom: .5rem;
+    }
+}
+
+@media (max-width:480px) {
+
+    .header-nav-ul {
+        padding: .5% .8%;
+        font-size: 1em;
+    }
+
+    .header-contact a {
+        padding: .6rem;
+        font-size: .9rem;
+        margin: 1rem;
+    }
+
+    form button {
+        padding: .4rem;
+        font-size: 1.2em;
+        width: 6rem;
+    }
+
+    .section-Contact-us-wrapper-left-text {
+        position: absolute top: 10rem left: 1rem;
+        line-height: 100%;
+        letter-spacing: 0;
+    }
+}
